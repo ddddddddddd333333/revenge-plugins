@@ -1,9 +1,8 @@
 // UserTracker Plugin for Revenge v2.1.0
-import { findByProps } from "@revenge-mod/modules/finders";
-import { after } from "@revenge-mod/patcher";
-import { storage } from "@revenge-mod/storage";
-import { React, ReactNative } from "@revenge-mod/metro/common";
-
+const { findByProps } = revenge.modules.finders;
+const { after } = revenge.patcher;
+const { storage } = revenge.storage;
+const { React, ReactNative } = revenge.metro.common;
 const { useState } = React;
 const {
     View, Text, TextInput, TouchableOpacity,
